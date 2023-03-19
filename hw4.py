@@ -4,25 +4,25 @@
 # Пользователь вводит 2 числа. n - кол-во элементов первого
 # множества. m - кол-во элементов второго множества. Затем пользователь вводит сами элементы множеств.
 
-# n = int(input('Введите количесвто элементов первого множества: '))
-# m = int(input('Введите количесвто элементов второго множества: '))
-# n_list = []
-# m_list = []
-# for i in range(n):
-#         n_count = int(input(f'Введите натуральные числа входящие в первое множество: '))
-#         n_list.append(n_count)
-# for i in range(m):
-#         m_count = int(input(f'Введите натуральные числа входящие во второе множество: '))
-#         m_list.append(m_count)
-# print(n_list)     
-# print(m_list)
-# print("==============================")
+n = int(input('Введите количесвто элементов первого множества: '))
+m = int(input('Введите количесвто элементов второго множества: '))
+n_list = []
+m_list = []
+for i in range(n):
+        n_count = int(input(f'Введите натуральные числа входящие в первое множество: '))
+        n_list.append(n_count)
+for i in range(m):
+        m_count = int(input(f'Введите натуральные числа входящие во второе множество: '))
+        m_list.append(m_count)
+print(n_list)     
+print(m_list)
+print("==============================")
 
-# n_many = set(n_list)
-# m_many = set(m_list)
-# nm_many = n_many.intersection(m_many)
+n_many = set(n_list)
+m_many = set(m_list)
+nm_many = n_many.intersection(m_many)
 
-# print(sorted(nm_many))
+print(sorted(nm_many))
 
 
 # Задача 24: В фермерском хозяйстве в Карелии выращивают чернику. 
