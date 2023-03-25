@@ -5,14 +5,14 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8 
 
-# def exponentiation(a,b):
-#     if b == 0:
-#         return 1
-#     return a * exponentiation(a, b-1)
+def recexpo(a,b):
+    if b == 0:
+        return 1
+    return a * recexpo(a, b-1)
 
-# a = int(input('Введите число: '))
-# b = int(input('Введите степень возведения: '))
-# print(f'Ответ: {exponentiation(a,b)}')
+a = int(input('Введите число: '))
+b = int(input('Введите степень: '))
+print(f'Ответ: {recexpo(a,b)}')
 
 
 # Напишите рекурсивную функцию sum(a, b), 
@@ -21,7 +21,7 @@
 # Также нельзя использовать циклы.
 # *Пример:*
 # 2 2
-#     4
+# 4
 
 def recsum(c,d):
     if d == 0:
